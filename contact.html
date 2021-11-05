@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="icon" href="triguard-web-images/Triguard-spider.png" />
+
+    <title>TriGuard Sales</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://triguardsales.com" />
+    <meta name="description" content="Recruiting website for TriGuard Pest Control door-to-door sales." />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="TriGuard Sales" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://triguardsales.com" />
+    <meta property="og:description" content="Recruiting website for TriGuard Pest Control door-to-door sales." />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="all.min.css">
+
+    <!-- Import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- The wrapper and content divs set margins and positioning -->
+    <div class="wrapper">
+
+        <!-- This is the start of content for our page -->
+        <header>
+            <div class="topnav" id="myLinks">
+                <img class="logo" src="triguard-web-images/triguard-logo.png" alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="stats.html">Statistics</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form action="contact.php" method="post">
+                <div class="elem-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20}
+                        required>
+                </div>
+                <div class="elem-group">
+                    <label for="email">Your E-mail</label>
+                    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                </div>
+                <!-- <div class="elem-group">
+                    <label for="department-selection">Choose Concerned Department</label>
+                    <select id="department-selection" name="concerned_department" required>
+                        <option value="">Select a Department</option>
+                        <option value="billing">Billing</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="technical support">Technical Support</option>
+                    </select>
+                </div> -->
+                <!-- <div class="elem-group">
+                    <label for="title">Reason For Contacting Us</label>
+                    <input type="text" id="title" name="email_title" required placeholder="Unable to Reset my Password"
+                        pattern=[A-Za-z0-9\s]{8,60}>
+                </div> -->
+                <div class="elem-group">
+                    <label for="message">Write your message/Ask a question</label>
+                    <textarea id="message" name="visitor_message" placeholder="Say whatever you want."
+                        required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </main>
+    </div>
+    <footer class="footer-bottom">
+        <div class="container">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/TriGuardPestControl" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/triguardsales/" target="_blank"><i
+                            class="fab fa-instagram-square"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=EtZL84Ne5-c" target="_blank"><i
+                            class="fab fa-youtube-square"></i></a>
+                </li>
+            </ul>
+            <div id="footer-info">© 2021 TriGuard Pest Control</div>
+        </div>
+    </footer>
+</body>
+
+</html>

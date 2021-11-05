@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="triguard-web-images/Triguard-spider.png" />
+    <title>TriGuard Sales</title>
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://triguardsales.com" />
+    <meta name="description" content="Recruiting website for TriGuard Pest Control door-to-door sales." />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="TriGuard Sales" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://triguardsales.com" />
+    <meta property="og:description" content="Recruiting website for TriGuard Pest Control door-to-door sales." />
+    <meta name="twitter:card" content="summary" />
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <!-- Import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    
+        <!-- This is the start of content for our page -->
+        <header>
+            <div class="topnav" id="myLinks">
+                <img class="logo" src="triguard-web-images/triguard-logo.png" alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="stats.html">Statistics</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main class="about-main">
+            <div>
+                <img class="group-img" src="triguard-web-images/triguard-group-condensed.jpg" alt="Triguard group picture">
+            </div>
+            <div class="about">
+                <h1>Who is TriGuard?</h1>
+                <p>Triguard is one of the fastest growing pest-control companies in the northwest. Servicing Boise,
+                    Seattle,
+                    Vancouver, Portland. Strive for quality accounts. We owe our rapid growth to our amazing crew. The
+                    owners have many years of experience doing door-to-door sales and know what it takes to be a
+                    successful sales person. We are always looking zealous, hard working individuals who want to help
+                    our company grow.</p>
+            </div>
+            <div class="about-grid">
+                <div class="building-box">
+                    <h2>Our Building</h2>
+                    <img class="building" src="triguard-web-images/triguard-building.jpg"
+                        alt="open Gallery of building images" onclick="openModal2();currentSlide(1)">
+                </div>
+                <!-- Building Gallery Modal -->
+                <div id="buildingModal" class="myModal">
+                    <span class="close cursor" onclick="closeModal2()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="triguard-web-images/triguard-building.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="triguard-web-images/dinosaurs.JPG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="triguard-web-images/waterfall.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="triguard-web-images/boatride.jpg" style="width:100%">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                            <img class="demo" src="triguard-web-images/triguard-building.jpg" onclick="currentSlide(1)"
+                                alt="Nature">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="triguard-web-images/dinosaurs.JPG" onclick="currentSlide(2)"
+                                alt="Snow">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="triguard-web-images/waterfall.jpg" onclick="currentSlide(3)"
+                                alt="Mountains">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="triguard-web-images/boatride.jpg" onclick="currentSlide(4)"
+                                alt="Lights">
+                        </div>
+                    </div>
+                </div>
+                <div class="reps-box">
+                    <h2>Meet Our Reps</h2>
+                    <img class="reps" src="triguard-web-images/triguard-group.jpg"
+                        alt="open Gallery of triguard employees" onclick="openModal2();currentSlide(1)"
+                        style="width:300px">
+                </div>
+            </div>
+            <div class="locations">
+                <h2>Our Locations</h2>
+                <h3>TriGuard offices are located in Seattle, Vancouver, Portland, and Boise. TriGuard headquartes are
+                    located in Caldwell, ID.</h3>
+                <img src="triguard-web-images/Our_Locations.png" alt="map of our locations">
+            </div>
+            <div>
+                <h2>We Know How to Have Fun</h2>
+                <div class="videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EtZL84Ne5-c"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uo86ma83Nqw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/coPcrDKpplI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="activities">
+                    <img src="triguard-web-images/skydiving.JPG" alt="skydiving">
+                    <img src="triguard-web-images/waterfall.jpg" alt="waterfall">
+                    <img src="triguard-web-images/dinosaurs.JPG" alt="dinosaur race">
+                </div>
+                <div class="activities-2">
+                    <img src="triguard-web-images/rafting.JPG" alt="rafting">
+                    <img src="triguard-web-images/skydiving.JPG" alt="skydiving">
+                    <img src="triguard-web-images/dinosaurs.JPG" alt="dinosaur race">
+                </div>
+            </div>
+            <div class="center-container">
+                <a class="contact" href="contact.html">Message Us</a>
+            </div>
+        </main>
+  
+    <footer class="footer-bottom">
+        <div class="container">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/TriGuardPestControl" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/triguardsales/" target="_blank"><i
+                            class="fab fa-instagram-square"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=EtZL84Ne5-c" target="_blank"><i
+                            class="fab fa-youtube-square"></i></a>
+                </li>
+            </ul>
+            <div id="footer-info">© 2021 TriGuard Pest Control</div>
+        </div>
+    </footer>
+</body>
