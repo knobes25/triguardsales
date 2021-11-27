@@ -28,6 +28,9 @@
 
     <!-- Import the webpage's javascript file -->
     <script src="script.js" defer></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+
 </head>
 
 <body>
@@ -44,7 +47,7 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
                         <li><a href="stats.html">Statistics</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html" class="contact-pop">Contact Us</a></li>
                     </ul>
                     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                     <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
@@ -53,38 +56,44 @@
                 </nav>
             </div>
         </header>
-        <main>
-            <form action="contact.php" method="post">
-                <div class="elem-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20}
-                        required>
-                </div>
-                <div class="elem-group">
-                    <label for="email">Your E-mail</label>
-                    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
-                </div>
-                <!-- <div class="elem-group">
-                    <label for="department-selection">Choose Concerned Department</label>
-                    <select id="department-selection" name="concerned_department" required>
-                        <option value="">Select a Department</option>
-                        <option value="billing">Billing</option>
-                        <option value="marketing">Marketing</option>
-                        <option value="technical support">Technical Support</option>
-                    </select>
-                </div> -->
-                <!-- <div class="elem-group">
-                    <label for="title">Reason For Contacting Us</label>
-                    <input type="text" id="title" name="email_title" required placeholder="Unable to Reset my Password"
-                        pattern=[A-Za-z0-9\s]{8,60}>
-                </div> -->
-                <div class="elem-group">
-                    <label for="message">Write your message/Ask a question</label>
-                    <textarea id="message" name="visitor_message" placeholder="Say whatever you want."
-                        required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
+        <main class="contact-main">
+            <h2 class="contact-h2">Get In Touch!</h2>
+            <h3 class="contact-h3">Send us a message and a TriGuard manager will get in contact with you within 24 hours.</br> We
+                look forward to getting to know you!</h3>
+            <div class="form-container">
+                <form action="https://getform.io/f/00a2313a-324e-4880-aae7-6cddf0a32608" method="POST"
+                    id="contact-form">
+                    <div class="contact-sections">
+                        <label for="name">Your Name:</label>
+                        <input name="name" type="text" pattern=[A-Z\sa-z]{3,20} required />
+                    </div>
+                    <div class="contact-sections">
+                        <label for="email">Email Address:</label>
+                        <input name="email" type="text" required />
+                    </div>
+                    <div class="contact-sections">
+                        <label for="number">Phone Number:</label>
+                        <input name="number" placeholder="123-456-1234" type="text" required />
+                    </div>
+                    <div class="contact-sections">
+                        <label>How did you hear about us?</label>
+                        <select id="options" name="options">
+                            <option value=" ">Please choose one</option>
+                            <option>Friend</option>
+                            <option>Social Media</option>
+                            <option>Advertisement</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="contact-sections">
+                        <label for="message">How can we help?</label>
+                        <textarea name="message" required></textarea>
+                    </div>
+                    <div class="contact-sections">
+                        <input type="submit" value="Submit">
+                      </div>
+                </form>
+            </div>
         </main>
     </div>
     <footer class="footer-bottom">

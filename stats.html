@@ -30,41 +30,70 @@
 
 <body>
     <!-- The wrapper and content divs set margins and positioning -->
-    <div class="wrapper">
-            <!-- This is the start of content for our page -->
-            <header>
-                <div class="topnav" id="myLinks">
-                    <img class="logo" src="triguard-web-images/triguard-logo.png" alt="logo">
-                    <nav>
+    <div>
+        <!-- This is the start of content for our page -->
+        <header>
+            <div class="topnav" id="myLinks">
+                <img class="logo" src="triguard-web-images/triguard-logo.png" alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="stats.html">Statistics</a></li>
+                        <li><a href="contact.html" class="contact-pop">Contact Us</a></li>
+                    </ul>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main class="stats-main">
+            <h1 class="stats-heading">Don't Settle for a Normal Job...</h1>
+            <div class="job">
+                <img src="triguard-web-images/normaljob.png" alt="normal job earnings">
+                <p class="vs">VS</p>
+                <img src="triguard-web-images/Triguard-stats.png" alt="triguard average earnings">
+            </div>
+            <div class="numbers-container">
+                <div class="numbers">
+                    <h2 class="stats-subheading">This Summer's Numbers</h2>
+                    <div class="stats-list">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="testimonials.html">Testimonials</a></li>
-                            <li><a href="stats.html">Statistics</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><span class="pop">$30,740</span> | Average 1st Year Earnings</li>
+                            <li><span class="pop">$41,416</span> | Per rep average</li>
+                            <li><span class="pop">$611</span> | Average Contract Value</li>
+                            <li><span class="pop">96%</span> | Sold to service ratio</li>
+                            <li><span class="pop">75%</span> of reps return</li>
+                            <li><span class="pop">5</span> Locations</li>
+                            <li><span class="pop">Top 100</span> pest companies in the nation</li>
+                            <li><span class="pop">$0</span> in debt</li>
+                            <li>59% of reps sold over <span class="pop">200</span></li>
+                            <li>Every rep sold over <span class="pop">100</span> **</li>
                         </ul>
-                        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                        <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </nav>
+                        <p>*We don't inflate our numbers like other companies</p>
+                        <p>** Every rep who stayed the entire summer from April-August</p>
+                    </div>
                 </div>
-            </header>
-            <main>
-                <h1>Don't Settle for a Normal Job</h1>
-               <div>
-                   <img src="triguard-web-images/normaljob.png" alt="normal job earnings">
-               </div>
-            </main>
+            </div>
+            <div class="center-container">
+                <a class="contact" href="contact.html">Message Us</a>
+            </div>
+        </main>
     </div>
     <footer class="footer-bottom">
         <div class="container">
             <ul class="social-icons">
-                <li><a href="https://www.facebook.com/TriGuardPestControl" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <li><a href="https://www.facebook.com/TriGuardPestControl" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
                 </li>
-                <li><a href="https://www.instagram.com/triguardsales/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                <li><a href="https://www.instagram.com/triguardsales/" target="_blank"><i
+                            class="fab fa-instagram-square"></i></a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=EtZL84Ne5-c" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                <li><a href="https://www.youtube.com/watch?v=EtZL84Ne5-c" target="_blank"><i
+                            class="fab fa-youtube-square"></i></a>
                 </li>
             </ul>
             <div id="footer-info">© 2021 TriGuard Pest Control</div>
