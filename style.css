@@ -44,6 +44,7 @@
       font-size: 1rem;
     }
   }
+
   /* Navigation grid */
 
   nav {
@@ -70,14 +71,13 @@
     font-size: 1.5em;
     text-decoration: none;
     padding: 10px;
-    text-transform: uppercase;
     margin-left: -10px;
   }
 
-  @media screen and (max-width: 1245px) and (min-width: 850px) {
+  @media screen and (max-width: 1275px) and (min-width: 840px) {
     nav a {
       font-size: 1.5vw;
-      padding: 10px;
+      padding: 5px;
       margin-left: -25px;
     }
   }
@@ -588,16 +588,23 @@
     text-shadow: 2px 2px 4px gray;
   }
 
+  .about-h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    color: var(--color-primary);
+  }
+
   .about p {
     text-align: center;
   }
 
-@media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1000px) {
     .about {
-    max-height: 600px;
-    margin: 0 100px;
+      max-height: 600px;
+      margin: 0 100px;
+    }
   }
-}
 
   .about-margin {
     margin: 0 3px;
@@ -619,7 +626,7 @@
     background-color: #333;
     content: "";
     display: inline-block;
-    height: 1.5px;
+    height: 2px;
     position: relative;
     vertical-align: middle;
     width: 50%;
@@ -702,9 +709,10 @@
     color: white;
     position: absolute;
     top: 100px;
-    right: 25px;
+    right: 15px;
     font-size: 35px;
     font-weight: bold;
+    z-index: 2;
   }
 
   .close:hover, .close:focus {
@@ -778,14 +786,15 @@
   }
 
   @media screen and (min-width: 1000px) {
-  .locations-container {
-    margin: 0 200px;
+    .locations-container {
+      margin: 0 200px;
+    }
   }
-}
+
   .locations img {
     width: 100%;
   }
-  
+
   .activities, .activities-2 {
     display: flex;
     justify-content: space-evenly;
@@ -794,10 +803,12 @@
 
   .activities img {
     width: 30vw;
+    height: auto;
   }
 
   .activities-2 img {
     width: 30vw;
+    height: auto;
   }
 
   .videos {
@@ -808,7 +819,8 @@
   }
 
   .videos iframe {
-    max-width: 30vw;
+    max-width: 80%;
+    margin: 0 10px;
   }
 
   .center-container {
@@ -848,7 +860,7 @@
   }
 
   .testimonials-main p {
-    color: lightgrey;
+    color: #fff;
     text-align: left;
   }
 
@@ -885,7 +897,7 @@
   }
 
   .accordian__button {
-    font-family: 'Roboto',   sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     display: block;
     width: 100%;
@@ -896,7 +908,7 @@
     background: #777;
     color: #fff;
     text-align: left;
-    }
+  }
 
   .accordian__button::after {
     content: '\25be';
@@ -904,12 +916,14 @@
     transform: scale(1.5);
   }
 
-  .accordian__button--active + .accordian__content {
+  .accordian__button--active+.accordian__content {
     display: block;
   }
+
   .accordian__button--active {
-    background: #555555;
+    background: #777;
   }
+
   .accordian__button--active::after {
     content: '\25b4';
   }
@@ -919,10 +933,10 @@
     overflow: auto;
 
     padding: 0 15px;
-    background: #333333;
+    background: rgba(0, 0, 0, 0, .9);
   }
 
-  /*------------------------------------Stats---------------------------------- */ 
+  /*------------------------------------Stats---------------------------------- */
   .stats-heading {
     color: var(--color-primary);
     font-size: 4em;
@@ -947,7 +961,7 @@
     margin: 20px 0;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    background-image: -webkit-linear-gradient(30deg, #333 50%, #737373 50%); 
+    background-image: -webkit-linear-gradient(30deg, #333 50%, #737373 50%);
   }
 
   .job img {
@@ -967,7 +981,8 @@
     font-size: 5em;
     justify-self: center;
     grid-column: 3/4;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #333333;
   }
@@ -982,30 +997,38 @@
     background-size: 100%;
     background-position-y: center;
     margin-bottom: 20px;
+    padding: 0 30px 20px;
   }
+
   .numbers {
     text-align: center;
   }
 
-  .stats-list {
+  @media screen and (min-width: 840px) {
+    .lists {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .stats-list, .stats-list2 {
     color: #fff;
-    padding: 20px;
-    margin: 5px;
-    /* background-color: #777;
-    box-shadow: 3px 3px 3px #333333; */
-    text-align: center;
+    padding: 0 20px;
+    margin: 5px auto;
+    text-align: left;
     font-size: 2rem;
   }
 
-  .stats-list p {
+  .numbers p {
     font-size: 1rem;
     color: #fff;
   }
 
-  /*------------------------------------Contact Form---------------------------------- */  
+  /*------------------------------------Contact Form---------------------------------- */
   .contact-main {
     margin: 100px 20px;
   }
+
   .contact-main h2, .contact-main h3 {
     text-align: center;
     margin: 0;
@@ -1020,7 +1043,7 @@
     color: var(--color-primary);
     text-transform: none;
   }
-  
+
   .form-container {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -1029,9 +1052,9 @@
   }
 
   .contact-sections {
-   padding: 5px;
+    padding: 5px;
   }
-  
+
   .contact-sections:after {
     content: "";
     display: table;
@@ -1046,7 +1069,7 @@
     width: 25%;
     margin-top: 10px;
   }
-  
+
   input, select, textarea {
     border-radius: 4px;
     border: 1px solid #ccc;
@@ -1058,7 +1081,7 @@
     float: left;
     margin-top: 6px;
   }
-  
+
   textarea {
     height: 250px;
   }
@@ -1073,7 +1096,7 @@
     float: right;
     width: 100px;
   }
-  
+
   input[type=submit]:hover {
     background-color: var(--color-bg);
   }
@@ -1130,16 +1153,20 @@
     .stats-main {
       margin-top: 100px;
     }
+
     .section1, .section2, .section3, .section4 {
       display: block;
       text-align: center;
     }
+
     .about-grid {
       display: block;
     }
+
     .banner {
       display: block;
     }
+
     .testimonials-grid {
       display: inline-block;
     }
@@ -1150,69 +1177,98 @@
     header {
       background-color: #767676;
     }
+
     .logo {
       width: 150px;
     }
+
     .topnav a {
       display: none;
     }
+
     .topnav a.icon {
       float: right;
       display: block;
     }
+
     nav li {
       padding: 3px;
       margin: 0;
     }
+
     nav a::before {
       display: none;
     }
+
     .fog {
-      min-height: 350px;
+      min-height: 300px;
     }
+
     .title {
-      font-size: 4em;
-      width: 410px;
+      font-size: 3.5em;
       padding: 5px 0;
     }
+
     .clickme {
       top: 75%;
     }
+
     .stats-heading {
       margin-top: -40px;
       background-image: none;
     }
+
     .section2 {
       background-image: url(triguard-web-images/triangle-background-2.jpg);
     }
-    .links a{
+
+    .links a {
       font-size: 1.1rem;
     }
+
     .centerbutton, .centerbutton2, .centerbutton3 {
       height: 30px;
     }
+
     .numbers-container {
       display: block;
       background: url(triguard-web-images/triangular-background-4.jpg);
     }
+
     .vs {
       font-size: 4em;
       margin: 0;
       -webkit-text-stroke-width: 0;
     }
+
     .job {
       display: block;
-      background-image: -webkit-linear-gradient(90deg, #333 50%, #737373 50%); 
+      background-image: -webkit-linear-gradient(90deg, #333 50%, #737373 50%);
       text-align: center;
     }
+
     .job img {
-      
       box-shadow: none;
     }
+
     .rep-box {
       width: 90%;
       margin: 20px auto;
     }
+
+    .fun {
+      display: block;
+      text-align: center;
+    }
+
+    .videos {
+      display: block;
+    }
+
+    .videos iframe {
+      max-width: 90%;
+    }
+
   }
 
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -1221,11 +1277,13 @@
     .topnav.responsive {
       position: relative;
     }
+
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
       top: 0;
     }
+
     .topnav.responsive a {
       float: none;
       display: block;
