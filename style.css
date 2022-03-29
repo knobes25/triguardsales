@@ -944,7 +944,7 @@
     text-align: center;
     text-shadow: 2px 2px 3px black;
     margin: 20px 0;
-    background-image: url(triguard-web-images/triangle-background-4.1.jpg);
+    /* background-image: url(triguard-web-images/triangle-background-4.1.jpg); */
     background-size: 100%;
   }
 
@@ -1145,6 +1145,11 @@
     width: 80%;
     max-width: 1080px;
     margin: 0 0 0 30px;
+  }
+
+  .paintinglink a{
+    color: #000000;
+    text-decoration: none;
   }
 
   /*Responsive for mobile devices*/
